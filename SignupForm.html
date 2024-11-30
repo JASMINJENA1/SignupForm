@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+
+    <!--====================REMIXICONS========================-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!--====================GOOGLE FONT========================-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        </style>
+
+     <!--=======================CSS=========================-->
+    <link rel="stylesheet" href="./SignupForm.css">
+</head>
+<body>
+  <div class="container">
+      <div class="signupContent">
+          <img src="./FigmaJasminDashboard.png" alt="sign up img not found" class="signupImg">
+
+            <div>
+
+            </div>
+
+           <form action="" class="signupForm1">
+             <div>
+                 <h1 class="signupTitle">
+                  <span>Welcome</span>Back
+                 </h1>
+                 <p class="signupDescription">
+                    Welcome ! Please signup to continue.
+                 </p>        
+             </div>
+
+             <div class="signupInputs">
+                <div>
+                  <label for="inputDetails" class="signupLabel">Name</label>
+                  <input type="text" placeholder="First Name" required class="signupInput" id="inputDetails"/>
+                  <input type="text" placeholder="Last Name" required class="signupInput" id="inputDetails"/>
+                  <br/>
+                  <label for="inputDetails" class="signupLabel">Email</label> 
+                  <input type="text" placeholder="Enter Your Email" required class="signupInput" id="inputDetails"/>
+                  <br/>
+                  <label for="inputDetails" class="signupLabel">DOB</label>
+                  <input type="date" placeholder="Select Your DOB" required class="signupInput" id="inputDetails">
+                  <br/>
+                  <label for="inputDetails" class="signupLabel">Gender</label>
+                  <input type="radio" name="gender"> Male
+                  <input type="radio" name="gender"> Female
+                  <input type="radio" name="gender"> Prefer Not To Say
+                  <br/>
+                  
+                  <div class="signupBox"> 
+                     <input type="password" placeholder="Enter your password" required class="signupInput" id="input-pass">
+                     <i class="ri-eye-off-line signupEye" id="input-icon"></i>
+                     <input type="password" placeholder="Confirm Password" required class="signupInput" id="input-pass">
+                     <i class="ri-eye-off-line signupEye" id="input-icon"></i>
+                    
+                  </div>
+                  <div class="signupCheck">
+                    <input type="checkbox" class="signupCheck-input" id="input-check">
+                    <label for="input-check" class="signupCheck-label">Remember me</label>
+                    <input type="checkbox" class="signupCheck-input" id="input-check">
+                    <label for="input-check" class="signupCheck-label">Accept terms and conditions</label>
+                  </div>
+                  <div>
+                    <div class="signupButtons">
+                        <button type="submit" class="signupBtn">Submit</button>
+                        <button class="signupBtn signupBtn-ghost">Log In</button>
+                    </div>                   
+                </div>
+             </div>
+           </form>
+      </div>
+  </div>
+
+
+    <script src="./SignupForm.js"></script>
+</body>
+</html>
